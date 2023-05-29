@@ -10,7 +10,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">Titolo</th>
                 <th scope="col">Tipologia</th>
-                <th scope="col">Azioni</th>
+                <th scope="col">Dettagli</th>
               </tr>
             </thead>
             <tbody>
@@ -19,7 +19,11 @@
                         <th scope="row"> {{$comic->id}} </th>
                         <td> {{$comic->title}} </td>
                         <td>{{$comic->type}}</td>
-                        <td> Bottone</td>
+                        <td> 
+                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-success">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
