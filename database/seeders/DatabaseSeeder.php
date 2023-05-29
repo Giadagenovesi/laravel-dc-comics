@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        // $this->call([
+        //     ComicsTableSeeder::class,
+        //     AltroSeeder::class ecc.
+        // ]); (questa mi chiama i automatico il seeder senza mettere nel comando --class, ed è utile quando ho più tabelle) e posso chiamare più seeder da fare partire
     }
 }
