@@ -2,7 +2,11 @@
 
 @section('content')
     <div class="container">
-        <h2>I nostri fumetti</h2>   
+        <h2>I nostri fumetti</h2> 
+        
+        <div class="my-4 text-center">
+            <a class="btn btn-success" href=" {{route('comics.create')}} ">Inserisci un nuovo fumetto</a>
+        </div>
         
         <table class="table">
             <thead>
@@ -27,6 +31,6 @@
                     </tr>
                 @endforeach
             </tbody>
-          </table>
+        </table>
     </div>
 @endsection
