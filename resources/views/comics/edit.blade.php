@@ -43,7 +43,7 @@
 
             <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
-                <textarea class="form-control" name="description" id="description" rows="3"> value="{{ $comic->description }}" </textarea>
+                <textarea class="form-control" name="description" id="description" rows="3"> {{ $comic->description }} </textarea>
             </div>
 
             <button type="submit" class="btn btn-success">Invia</button>
